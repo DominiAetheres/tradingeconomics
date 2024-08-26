@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Website</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" charset="utf-8"></script>
+    <script src="https://cdn.plot.ly/plotly-2.34.0.min.js" charset="utf-8"></script>
+</head>
+
+<body onload="renderData('tab', 'plot')">
+    <!--- I think the shadow at the top of the page really ties it together. It looks really bad without it. -->
+    <div class="sidenav">
+        <div><a style="text-decoration: none;" href="#intro">
+            <div class="nav_title">
+                Top
+            </div>
+        </a></div>
+        <div><a style="text-decoration: none;" href="#table">
+            <div class="nav_title">
+                Table
+            </div>
+        </a></div>
+    </div>
+    <div class="header">
+        <div class="left_details">
+            Trading Economics
+        </div>
+        <div class="right_details">
+            Webpage for developer application
+        </div>
+    </div>
+    <div id="intro" class="introduction_header">
+        <div>
+            Chinese Exports
+        </div>
+    </div>
+    <div class="content_body">
+        The chart below compares chinese exports to various major global economies annually from 1992 
+        in USD.
+        <br><br>
+        <div id="plot">
+            
+        </div>
+    </div>
+    <div id="table" class="introduction_header">
+        <div>
+            Tabular Form
+        </div>
+    </div>
+    <div class="content_body" id="tab">
+        Shown as billions of USD.
+    </div>
+
+</body>
+</html>
